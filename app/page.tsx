@@ -54,15 +54,15 @@ export default function Page() {
 
 function LandingPage({ onSelect }: { onSelect: (v: AppView) => void }) {
   return (
-    <div className="relative flex min-h-screen flex-col overflow-hidden bg-navy text-white">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(45,156,219,0.22),transparent_38%),radial-gradient(circle_at_85%_70%,rgba(0,191,166,0.18),transparent_34%)]" />
+    <div className="relative flex min-h-screen flex-col overflow-hidden bg-white text-navy">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(45,156,219,0.18),transparent_38%),radial-gradient(circle_at_85%_70%,rgba(11,45,77,0.14),transparent_34%)]" />
 
-      <header className="relative z-10 border-b border-white/10 bg-navy/70 px-5 py-4 backdrop-blur">
+      <header className="relative z-10 border-b border-border bg-white/90 px-5 py-4 backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between">
           <Logo variant="light" />
           <button
             onClick={() => onSelect("municipal")}
-            className="inline-flex items-center gap-2 border border-white/20 px-3 py-1.5 text-xs uppercase tracking-wider text-white/80 transition hover:border-sky hover:text-white"
+            className="inline-flex items-center gap-2 border border-border px-3 py-1.5 text-xs uppercase tracking-wider text-gray-text transition hover:border-sky hover:text-navy"
           >
             <Building2 className="size-3.5" /> Panel municipal
           </button>
@@ -83,10 +83,10 @@ function LandingPage({ onSelect }: { onSelect: (v: AppView) => void }) {
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 py-10">
         <div className="mb-10 text-center">
           <p className="text-xs uppercase tracking-[0.16em] text-sky">Plataforma municipal</p>
-          <h1 className="mt-2 font-heading text-5xl font-black uppercase leading-[0.9] md:text-7xl">Salta</h1>
+          <h1 className="mt-2 font-heading text-5xl font-black uppercase leading-[0.9] text-navy md:text-7xl">Salta</h1>
           <h1 className="font-heading text-5xl font-black uppercase leading-[0.9] text-sky md:text-7xl">Estaciona</h1>
-          <h1 className="font-heading text-5xl font-black uppercase leading-[0.9] text-turquoise md:text-7xl">Transparente</h1>
-          <p className="mx-auto mt-4 max-w-2xl text-sm text-white/70 md:text-base">
+          <h1 className="font-heading text-5xl font-black uppercase leading-[0.9] text-sky md:text-7xl">Transparente</h1>
+          <p className="mx-auto mt-4 max-w-2xl text-sm text-gray-text md:text-base">
             Orden urbano, inclusion laboral y estacionamiento seguro.
           </p>
         </div>
@@ -94,36 +94,36 @@ function LandingPage({ onSelect }: { onSelect: (v: AppView) => void }) {
         <div className="grid gap-4 md:grid-cols-2">
         <button
           onClick={() => onSelect("conductor")}
-            className="group flex w-full items-center gap-4 border border-white/15 bg-white/[0.04] p-5 text-left transition hover:border-sky"
+            className="group flex w-full items-center gap-4 border border-border bg-white p-5 text-left transition hover:border-sky"
         >
             <span className="flex size-14 shrink-0 items-center justify-center bg-sky">
             <Car className="size-7 text-white" />
           </span>
           <div>
-              <p className="font-heading text-xl font-bold uppercase text-white">Quiero estacionar</p>
-              <p className="text-sm text-white/70">Reserva un espacio publico habilitado</p>
+              <p className="font-heading text-xl font-bold uppercase text-navy">Quiero estacionar</p>
+              <p className="text-sm text-gray-text">Reserva un espacio publico habilitado</p>
               <p className="mt-2 text-xs text-sky underline">Registrarme como conductor</p>
           </div>
-            <ArrowRight className="ml-auto size-5 text-white/60 transition group-hover:text-sky" />
+            <ArrowRight className="ml-auto size-5 text-gray-text transition group-hover:text-sky" />
         </button>
 
         <button
           onClick={() => onSelect("permisionario")}
-            className="group flex w-full items-center gap-4 border border-white/15 bg-white/[0.04] p-5 text-left transition hover:border-sky"
+            className="group flex w-full items-center gap-4 border border-border bg-white p-5 text-left transition hover:border-sky"
         >
-            <span className="flex size-14 shrink-0 items-center justify-center bg-turquoise">
+            <span className="flex size-14 shrink-0 items-center justify-center bg-sky">
             <HardHat className="size-7 text-white" />
           </span>
           <div>
-              <p className="font-heading text-xl font-bold uppercase text-white">Soy permisionario</p>
-              <p className="text-sm text-white/70">Trabaja habilitado y cobra de forma transparente</p>
+              <p className="font-heading text-xl font-bold uppercase text-navy">Soy permisionario</p>
+              <p className="text-sm text-gray-text">Trabaja habilitado y cobra de forma transparente</p>
               <p className="mt-2 text-xs text-sky underline">Registrarme como permisionario</p>
           </div>
-            <ArrowRight className="ml-auto size-5 text-white/60 transition group-hover:text-sky" />
+            <ArrowRight className="ml-auto size-5 text-gray-text transition group-hover:text-sky" />
         </button>
         </div>
 
-        <div className="mt-8 text-center text-xs text-white/45">
+        <div className="mt-8 text-center text-xs text-gray-text">
           <p>Presentacion ideathon · Municipalidad de Salta Capital</p>
         </div>
       </div>
